@@ -1,7 +1,7 @@
-package com.jobseeker.entity.logs;
+package com.jscore.logs;
 
-import com.jobseeker.entity.embeded.ses.IncomingData;
-import com.jobseeker.entity.enums.StatusSendingMail;
+import com.jscore.embeded.ses.IncomingData;
+import com.jscore.enums.StatusSendingMail;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

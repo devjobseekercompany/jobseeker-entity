@@ -1,4 +1,4 @@
-package com.jobseeker.entity.embeded.ses;
+package com.jscore.embeded.ses;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
