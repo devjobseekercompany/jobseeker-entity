@@ -10,8 +10,8 @@
     </parent>
 
     <groupId>com.jobseeker.entity</groupId>
-    <artifactId>Jobseeker-Entity</artifactId>
-    <version>0.0.1</version>
+    <artifactId>jobseeker-entity</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <name>Jobseeker Entity</name>
     <description>Jobseeker Entity</description>
 
@@ -41,6 +41,15 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub devjobseekercompany Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/devjobseekercompany/jobseeker-entity</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
