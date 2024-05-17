@@ -1,4 +1,4 @@
-package com.jscore.enums;
+package org.jobseeker.enums;
 
 public enum StatusSendingMail {
     SENT,

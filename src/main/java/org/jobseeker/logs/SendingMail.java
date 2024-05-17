@@ -1,11 +1,11 @@
-package com.jscore.logs;
+package org.jobseeker.logs;
 
-import com.jscore.embeded.ses.IncomingData;
-import com.jscore.enums.StatusSendingMail;
+import org.jobseeker.enums.StatusSendingMail;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.jobseeker.logs.embedded.IncomingData;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
