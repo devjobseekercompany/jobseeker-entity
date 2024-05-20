@@ -1,20 +1,21 @@
-package org.jobseeker.embedded.mediafile;
+package org.jobseeker.embedded.vacancy.applicant.offeringletter;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.jobseeker.enums.general.MimeType;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class FileDataEmbed {
-	@Field(name = "link")
-	private String link;
+public class ItemBenefitOfferingLetter {
 
-	@Field(name = "mime_type")
-	private MimeType mimeType;
+	@Field(name = "name")
+	public String name;
+
+	@Field(name = "amount")
+	public long amount;
+
 }

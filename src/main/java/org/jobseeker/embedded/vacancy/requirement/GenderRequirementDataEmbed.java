@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.general.GeneralMultiLangDataEmbed;
-import org.jobseeker.enums.Gender;
+import org.jobseeker.enums.general.Gender;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.jobseeker.embedded.organization.CompanyDataEmbed;
 import org.jobseeker.embedded.general.GeneralTimestamp;
-import org.jobseeker.enums.StatusData;
+import org.jobseeker.enums.general.StatusData;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;

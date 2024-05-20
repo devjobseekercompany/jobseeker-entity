@@ -7,7 +7,7 @@ import org.jobseeker.embedded.employee.EmployeeDataEmbed;
 import org.jobseeker.embedded.general.GeneralDataEmbed;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.embedded.organization.CompanyDataEmbed;
-import org.jobseeker.enums.StatusData;
+import org.jobseeker.enums.general.StatusData;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.data.mongodb.core.mapping.Document;

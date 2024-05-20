@@ -9,7 +9,7 @@ import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.embedded.vacancy.JobFunctionDataEmbed;
 import org.jobseeker.embedded.vacancy.RecruitmentProcessDataEmbed;
 import org.jobseeker.embedded.vacancy.requirement.*;
-import org.jobseeker.enums.StatusData;
+import org.jobseeker.enums.general.StatusData;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -25,6 +25,7 @@ import java.util.List;
 @Document(collection = "vacancies")
 @EqualsAndHashCode(callSuper = true)
 public class Vacancy extends GeneralTimestamp {
+
 	@Id
 	@JsonProperty("oid")
 	private String _id;

@@ -1,6 +1,6 @@
 package org.jobseeker.logs;
 
-import org.jobseeker.enums.StatusSendingMail;
+import org.jobseeker.enums.mailing.StatusSendingMail;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

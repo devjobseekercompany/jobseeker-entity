@@ -1,4 +1,4 @@
-package org.jobseeker.enums;
+package org.jobseeker.enums.general;
 
 public enum StatusData {
 	ACTIVE,

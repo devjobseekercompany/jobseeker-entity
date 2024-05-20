@@ -10,7 +10,7 @@ import org.jobseeker.embedded.master.NotifTokenDataEmbed;
 import org.jobseeker.embedded.master.PhoneDataEmbed;
 import org.jobseeker.embedded.master.SosmedDataEmbed;
 import org.jobseeker.embedded.mediafile.MediaDataEmbed;
-import org.jobseeker.enums.StatusData;
+import org.jobseeker.enums.general.StatusData;
 import org.jobseeker.organization.embedded.CreditDataEmbed;
 import org.jobseeker.organization.embedded.GalleryDataEmbed;
 import org.jobseeker.organization.embedded.LegacyCompanyData;
