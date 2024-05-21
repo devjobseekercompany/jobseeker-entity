@@ -43,6 +43,9 @@ public class Company extends GeneralTimestamp {
 	private String code;
 	@Field(name = "email")
 	private String email;
+
+	@Field(name = "alias")
+	private String alias;
 	@Field(name = "phone_number")
 	private PhoneDataEmbed phoneNumber;
 
@@ -70,6 +73,8 @@ public class Company extends GeneralTimestamp {
 	private List<SiteUrlDataEmbed> careerSiteUrl;
 	@Field(name = "hrms_site_url")
 	private List<SiteUrlDataEmbed> hrmsSiteUrl;
+	@Field(name = "website_url")
+	private String websiteUrl;
 
 	@Field(name = "province")
 	private GeneralDataEmbed province;

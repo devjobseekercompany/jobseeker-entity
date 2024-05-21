@@ -1,5 +1,6 @@
 package org.jobseeker.embedded.vacancy.applicant;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.bson.types.ObjectId;
 import org.jobseeker.embedded.general.GeneralTimestamp;
@@ -18,6 +19,7 @@ import java.time.LocalDateTime;
 public class ApplicantActivityDataEmbed extends GeneralTimestamp {
 
 	@Id
+	@JsonProperty("oid")
 	private ObjectId _id;
 
 	@Field(name = "apply_process")

@@ -4,6 +4,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.attendance.ScheduleDataEmbed;
 import org.jobseeker.embedded.employee.EmployeeDataEmbed;
+import org.jobseeker.embedded.mediafile.FileDataEmbed;
 import org.jobseeker.embedded.vacancy.applicant.ApplicantActivityDataEmbed;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -20,7 +21,7 @@ public class ProcessActivityDataEmbed extends ApplicantActivityDataEmbed {
 	private String notes;
 
 	@Field(name = "file")
-	private String file;
+	private FileDataEmbed file;
 
 	@Field(name = "attendees")
 	private List<EmployeeDataEmbed> attendees;

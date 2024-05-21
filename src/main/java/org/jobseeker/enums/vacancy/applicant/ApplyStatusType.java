@@ -28,7 +28,7 @@ public enum ApplyStatusType {
 	}}),
 	PASSED(new HashMap<>(){{
 		put("id", "Lolos");
-		put("en", "Failed");
+		put("en", "Passed");
 		put("code", "1");
 	}}),
 	FAILED(new HashMap<>(){{
