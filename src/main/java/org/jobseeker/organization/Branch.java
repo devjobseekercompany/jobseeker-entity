@@ -21,12 +21,13 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Document(collection = "branches")
 @EqualsAndHashCode(callSuper = true)
 public class Branch extends GeneralTimestamp {
+
 	@Id
 	@JsonProperty("oid")
 	private String _id;
 	@Field(name = "name")
 	private String name;
-	@Field(name = "name")
+	@Field(name = "address")
 	private String address;
 
 	@Field(name = "city")
@@ -52,4 +53,5 @@ public class Branch extends GeneralTimestamp {
 	private int totalEmployee;
 	@Field(name = "total_vacancy")
 	private int totalVacancy;
+
 }
