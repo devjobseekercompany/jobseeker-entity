@@ -2,6 +2,7 @@ package org.jobseeker.auth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.auth.PermissionDataEmbed;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.enums.general.StatusData;
@@ -13,7 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.util.List;
 
 @Data
-@Builder
+@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
 @Document("roles")

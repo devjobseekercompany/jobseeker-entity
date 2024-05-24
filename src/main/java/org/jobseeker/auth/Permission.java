@@ -2,6 +2,7 @@ package org.jobseeker.auth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.auth.AmznResourceNames;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.embedded.organization.CompanyDataEmbed;
@@ -11,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
 @Document("permissions")

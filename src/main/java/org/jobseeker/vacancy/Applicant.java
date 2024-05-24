@@ -2,6 +2,7 @@ package org.jobseeker.vacancy;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.candidate.CandidateDataEmbed;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.embedded.organization.CompanyDataEmbed;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "applicants")

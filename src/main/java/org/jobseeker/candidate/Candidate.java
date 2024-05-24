@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.candidate.CandidateLegacyData;
 import org.jobseeker.embedded.general.GeneralDataEmbed;
 import org.jobseeker.embedded.general.GeneralMultiLangDataEmbed;
@@ -22,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "companies")

@@ -5,14 +5,16 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 public class SosmedDataEmbed {
+
 	@Id
 	@JsonProperty("oid")
 	private String _id;
@@ -25,4 +27,5 @@ public class SosmedDataEmbed {
 
 	@Field(name = "username")
 	private String username;
+
 }

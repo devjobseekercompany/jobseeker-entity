@@ -2,11 +2,12 @@ package org.jobseeker.embedded.vacancy;
 
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.general.GeneralMultiLangDataEmbed;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)

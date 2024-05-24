@@ -5,14 +5,16 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 public class CompanyDataEmbed {
+
 	@Id
 	@JsonProperty("oid")
 	private String _id;
@@ -22,4 +24,5 @@ public class CompanyDataEmbed {
 
 	@Field(name = "code")
 	private String code;
+
 }

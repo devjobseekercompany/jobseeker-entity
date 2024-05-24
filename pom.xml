@@ -11,7 +11,7 @@
 
     <groupId>org.jobseeker</groupId>
     <artifactId>entity</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
 
     <name>Jobseeker Core Entity</name>
     <description>Jobseeker Core Entity</description>

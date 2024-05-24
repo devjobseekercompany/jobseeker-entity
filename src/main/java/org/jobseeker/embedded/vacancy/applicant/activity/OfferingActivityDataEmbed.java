@@ -1,13 +1,14 @@
 package org.jobseeker.embedded.vacancy.applicant.activity;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.mediafile.FileDataEmbed;
 import org.jobseeker.embedded.vacancy.applicant.ApplicantActivityDataEmbed;
 import org.jobseeker.embedded.vacancy.applicant.offeringletter.OfferingLetterDataEmbed;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)

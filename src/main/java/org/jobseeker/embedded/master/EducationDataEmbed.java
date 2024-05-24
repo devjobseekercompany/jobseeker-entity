@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.general.GeneralDataEmbed;
 import org.jobseeker.embedded.general.GeneralMultiLangDataEmbed;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -11,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.time.Instant;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 public class EducationDataEmbed {

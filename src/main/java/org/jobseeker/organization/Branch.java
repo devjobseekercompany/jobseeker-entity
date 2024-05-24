@@ -2,6 +2,7 @@ package org.jobseeker.organization;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.area.CityDataEmbed;
 import org.jobseeker.embedded.employee.EmployeeDataEmbed;
 import org.jobseeker.embedded.general.GeneralDataEmbed;
@@ -14,7 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "branches")

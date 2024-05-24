@@ -1,19 +1,19 @@
 package org.jobseeker.embedded.master;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDateTime;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class NotifTokenDataEmbed extends GeneralTimestamp {
+
 	@Field(name = "_sql_id")
 	private int sqlId;
 
@@ -28,4 +28,5 @@ public class NotifTokenDataEmbed extends GeneralTimestamp {
 
 	@Field(name = "login_from")
 	private String loginFrom;
+
 }

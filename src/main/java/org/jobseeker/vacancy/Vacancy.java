@@ -2,6 +2,7 @@ package org.jobseeker.vacancy;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.area.CityDataEmbed;
 import org.jobseeker.embedded.general.GeneralDataEmbed;
 import org.jobseeker.embedded.general.GeneralMultiLangDataEmbed;
@@ -19,7 +20,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "vacancies")

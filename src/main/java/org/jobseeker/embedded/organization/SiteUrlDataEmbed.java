@@ -1,24 +1,23 @@
-package org.jobseeker.embedded.auth;
+package org.jobseeker.embedded.organization;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.util.List;
+
 @Data
 @SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AmznResourceNames {
+public class SiteUrlDataEmbed {
 
-	@Field(name = "api_id")
-	private String apiId;
+	@Field(name = "mode")
+	private String mode;
 
-	@Field(name = "region")
-	private String region;
+	@Field(name = "url")
+	private List<String> url;
 
-	@Field(name = "stage")
-	private String stage;
 }

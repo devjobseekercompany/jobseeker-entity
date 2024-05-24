@@ -1,5 +1,6 @@
 package org.jobseeker.logs;
 
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.enums.mailing.StatusSendingMail;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "sending_mails")

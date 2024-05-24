@@ -2,6 +2,7 @@ package org.jobseeker.embedded.vacancy.applicant;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.bson.types.ObjectId;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.enums.vacancy.applicant.ApplyProcessType;
@@ -12,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.time.LocalDateTime;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)

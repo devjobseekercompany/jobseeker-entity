@@ -2,6 +2,7 @@ package org.jobseeker.organization;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.area.CityDataEmbed;
 import org.jobseeker.embedded.general.GeneralDataEmbed;
 import org.jobseeker.embedded.general.GeneralTimestamp;
@@ -11,10 +12,10 @@ import org.jobseeker.embedded.master.PhoneDataEmbed;
 import org.jobseeker.embedded.master.SosmedDataEmbed;
 import org.jobseeker.embedded.mediafile.MediaDataEmbed;
 import org.jobseeker.enums.general.StatusData;
-import org.jobseeker.organization.embedded.CreditDataEmbed;
-import org.jobseeker.organization.embedded.GalleryDataEmbed;
-import org.jobseeker.organization.embedded.LegacyCompanyData;
-import org.jobseeker.organization.embedded.SiteUrlDataEmbed;
+import org.jobseeker.embedded.organization.CreditDataEmbed;
+import org.jobseeker.embedded.organization.GalleryDataEmbed;
+import org.jobseeker.embedded.organization.LegacyCompanyData;
+import org.jobseeker.embedded.organization.SiteUrlDataEmbed;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -24,7 +25,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "companies")
