@@ -58,7 +58,6 @@ public class Candidate extends GeneralTimestamp {
 	@Field(name = "video_resume")
 	private VideoResumeDataEmbed videoResume;
 
-
 	@Field(name = "profile")
 	private String profile;
 	@Field(name = "phone_number")
