@@ -23,29 +23,8 @@ public class EducationDataEmbed {
 	@Field(name = "major")
 	private String major;
 
-	@Field(name = "logo")
-	private String logo;
-
-	@Field(name = "institution")
-	private String institution;
-
-	@Field(name = "province")
-	private GeneralDataEmbed province;
-
-	@Field(name = "city")
-	private GeneralDataEmbed city;
-
-	@Field(name = "district")
-	private GeneralDataEmbed district;
-
-	@Field(name = "sub_district")
-	private GeneralDataEmbed sub_district;
-
 	@Field(name = "gpa")
 	private double gpa;
-
-	@Field(name = "certificate")
-	private String certificate;
 
 	@Field(name = "start_date")
 	private Instant startDate;
@@ -58,5 +37,27 @@ public class EducationDataEmbed {
 
 	@Field(name = "point_education")
 	private int pointEducation;
+
+	@Field(name = "logo")
+	private String logo;
+
+	@Field(name = "institution")
+	private String institution;
+
+	@Field(name = "certificate")
+	private String certificate;
+
+	// Area
+	@Field(name = "province")
+	private GeneralDataEmbed province;
+
+	@Field(name = "city")
+	private GeneralDataEmbed city;
+
+	@Field(name = "district")
+	private GeneralDataEmbed district;
+
+	@Field(name = "sub_district")
+	private GeneralDataEmbed sub_district;
 
 }

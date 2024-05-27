@@ -72,8 +72,8 @@ public class CandidateDataEmbed {
 	@Field(name = "birthdate")
 	private String birthdate;
 
-	@Field(name = "phone")
-	private PhoneDataEmbed phone;
+	@Field(name = "phone_number")
+	private PhoneDataEmbed phoneNumber;
 
 	@Field(name = "expected_salary")
 	private Long expectedSalary = 0L;

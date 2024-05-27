@@ -42,9 +42,9 @@ public class Applicant extends GeneralTimestamp {
 	private Long matchPercentage;
 
 	@Field(name = "current_activity")
-	private ApplicantActivityDataEmbed currentActivity = new ApplicantActivityDataEmbed();
+	private ApplicantActivityDataEmbed currentActivity;
 	@Field(name = "history_activity")
-	private List<ApplicantActivityDataEmbed> historyActivity = new ArrayList<>();
+	private List<ApplicantActivityDataEmbed> historyActivity;
 	@Field(name = "join_date")
 	private String joinDate;
 

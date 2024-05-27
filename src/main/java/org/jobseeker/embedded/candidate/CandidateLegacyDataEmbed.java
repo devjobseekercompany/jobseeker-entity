@@ -1,7 +1,6 @@
 package org.jobseeker.embedded.candidate;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
@@ -11,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CandidateLegacyData {
+public class CandidateLegacyDataEmbed {
 
 	@Field(name = "flag_update")
 	private String flagUpdate;

@@ -68,7 +68,7 @@ public class Company extends GeneralTimestamp {
 	@Field(name = "credit")
 	private CreditDataEmbed credit;
 	@Field(name = "industry_type")
-	private IndustryTypeDataEmbed industryType = new IndustryTypeDataEmbed();
+	private IndustryTypeDataEmbed industryType;
 
 	@Field(name = "career_site_url")
 	private List<SiteUrlDataEmbed> careerSiteUrl;
@@ -97,7 +97,7 @@ public class Company extends GeneralTimestamp {
 	@Field(name = "gallery")
 	private List<GalleryDataEmbed> gallery;
 	@Field(name = "newsletter_subscribe")
-	private boolean newsletterSubscribe = true;
+	private boolean newsletterSubscribe = false;
 
 	@Field(name = "following")
 	private int following = 0;

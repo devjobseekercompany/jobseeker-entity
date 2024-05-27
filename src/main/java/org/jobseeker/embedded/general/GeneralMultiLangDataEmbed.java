@@ -27,5 +27,5 @@ public class GeneralMultiLangDataEmbed {
 			@JsonSubTypes.Type(name = "String", value = String.class),
 			@JsonSubTypes.Type(name = "Object", value = ObjectMultiLanguage.class)
 	})
-	private Object vacancy;
+	private Object name;
 }
