@@ -55,9 +55,9 @@ public class User extends GeneralTimestamp {
 	@Field(name = "candidate_id", targetType = FieldType.OBJECT_ID)
 	private String candidateId;
 	@Field(name = "company_id", targetType = FieldType.OBJECT_ID)
-	private String companyId;
+	private List<String> companyId;
 	@Field(name = "employee_id", targetType = FieldType.OBJECT_ID)
-	private String employeeId;
+	private List<String> employeeId;
 
 	@Field(name = "on_boarding")
 	private Boolean onBoarding;
