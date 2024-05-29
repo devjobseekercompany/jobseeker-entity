@@ -1,9 +1,8 @@
-package org.jobseeker.master.education;
+package org.jobseeker.master;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.jobseeker.embedded.general.GeneralTimestamp;
-import org.jobseeker.embedded.general.ObjectMultiLanguage;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -12,24 +11,24 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "education_levels")
+@Document(collection = "video_tutorials")
 @EqualsAndHashCode(callSuper = true)
-public class EducationLevel extends GeneralTimestamp {
+public class VideoTutorial extends GeneralTimestamp {
 
 	@Id
 	@JsonProperty("oid")
 	private String _id;
 
-	@Field(name = "_sql_id")
-	private int sqlId;
+	@Field(name = "video")
+	private String video;
 
-	@Field(name = "name")
-	private ObjectMultiLanguage name;
+	@Field(name = "thumbnail")
+	private String thumbnail;
 
-	@Field(name = "point")
-	private Integer point;
+	@Field(name = "order")
+	private Integer order;
 
-	@Field(name = "is_default")
-	private boolean isDefault;
+	@Field(name = "show_in")
+	private String showIn;
 
 }

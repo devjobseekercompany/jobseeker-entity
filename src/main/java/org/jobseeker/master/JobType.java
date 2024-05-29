@@ -1,7 +1,11 @@
-package org.jobseeker.master.education;
+package org.jobseeker.master;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.embedded.general.ObjectMultiLanguage;
 import org.springframework.data.annotation.Id;
@@ -9,12 +13,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "education_levels")
+@Document(collection = "job_types")
 @EqualsAndHashCode(callSuper = true)
-public class EducationLevel extends GeneralTimestamp {
+public class JobType extends GeneralTimestamp {
 
 	@Id
 	@JsonProperty("oid")
@@ -25,11 +29,5 @@ public class EducationLevel extends GeneralTimestamp {
 
 	@Field(name = "name")
 	private ObjectMultiLanguage name;
-
-	@Field(name = "point")
-	private Integer point;
-
-	@Field(name = "is_default")
-	private boolean isDefault;
 
 }
