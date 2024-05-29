@@ -1,9 +1,11 @@
 package org.jobseeker.auth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-import org.bson.types.ObjectId;
 import org.jobseeker.embedded.auth.PermissionDataEmbed;
 import org.jobseeker.embedded.auth.RoleDataEmbed;
 import org.jobseeker.embedded.general.GeneralTimestamp;
@@ -11,6 +13,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.data.mongodb.core.mapping.FieldType;
 
 import java.util.List;
 
@@ -49,12 +52,12 @@ public class User extends GeneralTimestamp {
 	@Field(name = "access_direct_permissions")
 	private List<PermissionDataEmbed> accessDirectPermissions;
 
-	@Field(name = "candidate_id")
-	private ObjectId candidateId;
-	@Field(name = "company_id")
-	private ObjectId companyId;
-	@Field(name = "employee_id")
-	private ObjectId employeeId;
+	@Field(name = "candidate_id", targetType = FieldType.OBJECT_ID)
+	private String candidateId;
+	@Field(name = "company_id", targetType = FieldType.OBJECT_ID)
+	private String companyId;
+	@Field(name = "employee_id", targetType = FieldType.OBJECT_ID)
+	private String employeeId;
 
 	@Field(name = "on_boarding")
 	private Boolean onBoarding;

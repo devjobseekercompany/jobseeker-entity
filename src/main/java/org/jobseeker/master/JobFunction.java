@@ -8,9 +8,11 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
+import org.jobseeker.embedded.general.GeneralDataEmbed;
 import org.jobseeker.embedded.general.GeneralMultiLangDataEmbed;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.embedded.general.ObjectMultiLanguage;
+import org.jobseeker.embedded.organization.CompanyDataEmbed;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -43,5 +45,11 @@ public class JobFunction extends GeneralTimestamp {
 
 	@Field(name = "image_url")
 	private String imageUrl;
+
+	@Field(name = "is_default")
+	private boolean isDefault;
+
+	@Field(name = "company")
+	private CompanyDataEmbed company;
 
 }

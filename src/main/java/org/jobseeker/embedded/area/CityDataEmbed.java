@@ -1,5 +1,6 @@
 package org.jobseeker.embedded.area;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,15 +15,15 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CityDataEmbed {
+
 	@Id
+	@JsonProperty("oid")
 	private String _id;
 
 	@Field(name = "name")
 	private String name;
 
-	@Field(name = "code")
-	private String code;
-
 	@Field(name = "coordinate")
 	private GeoJsonPoint coordinate;
+
 }
