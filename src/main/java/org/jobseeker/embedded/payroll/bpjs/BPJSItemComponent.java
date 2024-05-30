@@ -1,14 +1,14 @@
-package org.jobseeker.embedded.organization.bpjs;
+package org.jobseeker.embedded.payroll.bpjs;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.enums.payroll.TaxType;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 public class BPJSItemComponent {

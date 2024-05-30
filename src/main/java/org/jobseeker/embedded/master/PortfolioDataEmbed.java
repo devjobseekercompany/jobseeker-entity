@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-import org.bson.types.ObjectId;
 import org.jobseeker.embedded.mediafile.FileDataEmbed;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -17,9 +16,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PortfolioDataEmbed {
+
 	@Id
 	@JsonProperty("oid")
-	private ObjectId _id;
+	private String _id;
 
 	@Field(name = "_sql_id")
 	private Integer sqlId;

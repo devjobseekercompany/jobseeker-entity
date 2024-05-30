@@ -1,20 +1,21 @@
 package org.jobseeker.master;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
-import org.jobseeker.embedded.general.GeneralTimestamp;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.general.ObjectMultiLanguage;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "genders")
-@EqualsAndHashCode(callSuper = true)
-public class Gender extends GeneralTimestamp {
+public class Gender {
 
 	@Id
 	@JsonProperty("oid")

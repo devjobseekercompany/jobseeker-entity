@@ -1,9 +1,11 @@
 package org.jobseeker.embedded.vacancy.applicant;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-import org.bson.types.ObjectId;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.enums.vacancy.applicant.ApplyProcessType;
 import org.jobseeker.enums.vacancy.applicant.ApplyStatusType;
@@ -21,7 +23,7 @@ public class ApplicantActivityDataEmbed extends GeneralTimestamp {
 
 	@Id
 	@JsonProperty("oid")
-	private ObjectId _id;
+	private String _id;
 
 	@Field(name = "apply_process")
 	private ApplyProcessType applyProcess;

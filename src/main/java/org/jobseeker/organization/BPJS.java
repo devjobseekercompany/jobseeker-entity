@@ -3,15 +3,16 @@ package org.jobseeker.organization;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.jobseeker.embedded.general.GeneralTimestamp;
 import org.jobseeker.embedded.organization.CompanyDataEmbed;
-import org.jobseeker.embedded.organization.bpjs.BPJSComponent;
+import org.jobseeker.embedded.payroll.bpjs.BPJSComponent;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "bpjs")
